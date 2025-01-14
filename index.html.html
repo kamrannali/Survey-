@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey-form</h1>
+      <p id="description" class="padj">Hey everyone! Welcome to our campus.
+      Here you will learn how to take your skills to another level. Before you get started make sure to fill and submit this survey-form below.</p>
+    </header>
+    <hr class="hrmar">
+    <form id="survey-form">
+      <fieldset>
+        <legend>Personal info</legend>
+          <label for="name" id="name-label">Enter your name please: <input type="text" id="name" name="name" placeholder="Your first name" class="block inherit" required /></label>
+          <label for="lastname">Enter your last name please: <input type="text" class="block" id="lastname" name="lastname" required /></label>
+         <label for="age">Your age: <input type="number" min="13" max="60" class="block" id="age" name="age" required /></label>
+          <label for="countryDOB">Enter your country of birth <input type="text" class="block" id="countryDOB" name="countryDOB" required /></label>
+          <label for="current-country">Enter your current country <input type="text" class="block" id="current-country" name="current-country" required /></label>
+          <label for="occupation">Enter your occupation: <input type="text" class="block" id="occupation" name="occupation" required /></label>
+          <label for="skills">Enter your skills: <input type="text" class="block" id="skills" name="skills" required /></label>
+      </fieldset>
+      <hr>
+      <fieldset>
+        <legend>Account info</legend>
+        <label for="email" id="email-label">Enter your email: <input type="email" id="email" name="email" placeholder="example@gmail.com" class="block" required /></label>
+        <label for="number" id="number-label">Enter you phone number: <input type="number" id="number" name="number" placeholder="+xxxxxxxxxxx" class="block" required min="12" max="13" /></label>
+        <label for="password">Create a strong password <input type="password" class="block" id="password" name="password" required /></label>
+        <label for="confirm-password">Confirm your password<input type="password" id="confirm-password" name="confirm-password" class="block" required /></label>
+      </fieldset>
+      <hr>
+      <fieldset>
+          <legend>Choose why do you wanna use our campus? It's required</legend>
+          <label for="work" class="block"><input type="radio" name="use-for" value="work" id="work" checked  /> Work</label>
+          <label for="education" class="block" ><input type="radio" name="use-for" value="education" id="education" /> Education</label>
+          <lebel for="personal" class="block"><input type="radio" id="personal" name="use-for" value="personal" /> Personal</label>
+      </fieldset>
+      <hr>
+      <fieldset>
+        <section class="secmar2">
+        <legend>How did you heard about us? It's required</legend>
+        <label>
+          <select id="dropdown" name="dropdown">
+            <option value="1">Social Media</option>
+            <option value="2">Chat GPT</option>
+            <option value="3">Google</option>
+            <option value="4">Youtube</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+        </section>
+        <hr>
+        <section class="secmar">
+          <legend>Which plan do you mind to use?</legend>
+          <label for="free" class="block"><input type="checkbox" id="free" name="plan" value="free" /> Free</label>
+          <label for="paid" class="block"><input type="checkbox" id="paid" name="plan" value="paid"  />Paid</label>
+          <label for="hybrid" class="block"><input type="checkbox" id="hybrid" name="plan" value="hybrid"  />Hybrid</label>
+        </section>
+      </fieldset>
+      <hr>
+      <fieldset class="non-border">
+        <legend>Bio (optional)</legend>
+        <textarea cols="30" rows="5" placeholder="My name is example, I like..."></textarea>
+      </fieldset>
+      <hr class="hrmar2">
+      <footer>
+        <p><input type="checkbox" id="terms-of-service" name="terms-of-service" required value="terms-of-service" /> Privacy Policy and terms of service</p>
+        <label class="padj">Make sure you have completed survey-form and then Submit your form<input type="submit" id="submit" name="submit" value="submit" class="block" /></label>
+      </footer>
+    </form>
+  </body>
+</html>
